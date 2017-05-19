@@ -15,7 +15,7 @@
     <header> <img id="openbutton" src="img/knaptilhjemmeside.png" alt="Aarhus Street Food logo"> </header>
     <!-- Hovedmenu -->
     <nav>
-        <div id="mySidenav" class="sidenav"> <a href="index.html">Forside</a> <a href="kitchens.html">Køkkener</a> <a href="#">Kurv</a> <a href="#">Kort</a> <a href="#">Profil</a> </div>
+        <div id="mySidenav" class="sidenav"> <a href="index.php">Forside</a> <a href="kitchens.php">Køkkener</a> <a href="#">Kurv</a> <a href="#">Kort</a> <a href="#">Profil</a> </div>
     </nav>
     <!-- Primært indhold -->
     <main> </main>
