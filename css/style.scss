@@ -11,7 +11,9 @@ body {
 
 /* Header Section */
 
-
+#asf-logo {
+    z-index: 100;
+}
 
 /* Navigation Menu Section */
 
@@ -26,6 +28,10 @@ body {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+}
+
+.active {
+    width: 50vw;
 }
 
 .sidenav a {
@@ -47,6 +53,21 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+/* Kitchen Page */
+
+.kitchen {
+    max-width: 32%;
+    display: inline-block;
+}
+
+.kitchen-image {   
+    max-width: 90%;
+}
+
+.kitchen-name {
+    font-size: 1em;
 }
 
 /* Footer Section */

@@ -9,8 +9,12 @@ body {
   padding: 0 0.5em; }
 
 /* Header Section */
+/* line 14, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+#asf-logo {
+  z-index: 100; }
+
 /* Navigation Menu Section */
-/* line 18, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 20, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav {
   height: 100%;
   width: 0;
@@ -23,7 +27,11 @@ body {
   padding-top: 60px;
   transition: 0.5s; }
 
-/* line 31, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 33, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+.active {
+  width: 50vw; }
+
+/* line 37, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -32,11 +40,11 @@ body {
   display: block;
   transition: 0.3s; }
 
-/* line 40, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 46, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav a:hover, .offcanvas a:focus {
   color: #f1f1f1; }
 
-/* line 44, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 50, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -44,13 +52,27 @@ body {
   font-size: 36px;
   margin-left: 50px; }
 
+/* Kitchen Page */
+/* line 60, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+.kitchen {
+  max-width: 32%;
+  display: inline-block; }
+
+/* line 65, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+.kitchen-image {
+  max-width: 90%; }
+
+/* line 69, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+.kitchen-name {
+  font-size: 1em; }
+
 /* Footer Section */
-/* line 54, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 75, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 footer {
   margin: 0;
   padding: 0; }
 
-/* line 59, ../../wamp64/www/aarhusstreetfood/css/style.scss */
+/* line 80, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 footer div {
   display: inline-block;
   width: 32%;

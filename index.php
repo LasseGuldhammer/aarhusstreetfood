@@ -14,7 +14,7 @@
         
         <!-- Header med fixed logo -->
         <header>
-            <img class="asf-logo" src="img/logo.png" alt="Aarhus Street Food logo" onclick="toggleNav()">
+            <img id="asf-logo" class="asf-logo" src="img/logo.png" alt="Aarhus Street Food logo">
         </header>
         
         <!-- Hovedmenu -->
