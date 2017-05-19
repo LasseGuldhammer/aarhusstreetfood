@@ -19,9 +19,6 @@ body {
 }
 
 
-/* Header Section */
-
-
 /* Navigation Menu Section */
 
 .sidenav {
@@ -34,6 +31,10 @@ body {
     background-color: #e53935;
     overflow-x: hidden;
     transition: 0.5s;
+}
+
+.active {
+    width: 15vw;
 }
 
 .sidenav a {
@@ -60,7 +61,8 @@ body {
     margin-left: 50px;
 }
 
-.openbutton {
+
+#openbutton {
     position: fixed;
     left: 0;
     top: 45%;
@@ -69,7 +71,23 @@ body {
 }
 
 .closebutton {
-    left: 15%;
+    margin-left: 15%;
+}
+
+
+/* Kitchen Page */
+
+.kitchen {
+    max-width: 32%;
+    display: inline-block;
+}
+
+.kitchen-image {   
+    max-width: 90%;
+}
+
+.kitchen-name {
+    font-size: 1em;
 }
 
 

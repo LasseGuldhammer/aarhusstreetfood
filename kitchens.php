@@ -14,7 +14,7 @@
         
         <!-- Header med fixed logo -->
         <header>
-            <img class="asf-logo" src="img/logo.png" alt="Aarhus Street Food logo" onclick="toggleNav()">
+            <img id="asf-logo" class="asf-logo" src="img/logo.png" alt="Aarhus Street Food logo" onclick="toggleNav()">
         </header>
         
         <!-- Hovedmenu -->
@@ -29,9 +29,41 @@
             </div>
         </nav>
         
+        <!-- Create New PDO -->
+        <?php
+            $servername = "localhost";
+            $dbname = "asf";
+            $username = "root";
+            $password = "";
+
+            try {
+                $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                // set the PDO error mode to exception
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                // echo "Connected successfully";
+                }
+            catch(PDOException $e)
+                {
+                echo "Connection failed: " . $e->getMessage();
+                }
+
+
+            $stmt = $conn->prepare("SELECT * FROM `kitchens`");
+            // var_dump($stmt);
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            //var_dump($results);
+
+        ?>
+        
         <!-- Primært indhold -->
-        <main>
-            
+        <main>            
+            <?php foreach($results as $result) { ?>
+            <section class="kitchen">
+                <img class="kitchen-image" src="img/<?php echo $result["image"]; ?>" alt="<?php echo $result["name"]; ?> billede">
+                <h2 class="kitchen-name"><?php echo $result["name"]; ?></h2>
+            </section>
+            <?php } ?>
         </main>
         
         <!-- Footer med kontaktinformation -->

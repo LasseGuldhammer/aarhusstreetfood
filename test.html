@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of toggle class in Javascript</title>
+	<style type="text/css">
+		#mySideBar{
+			display: block;
+			width: 100px;
+			height: 300px;
+			background-color: grey;
+			position: relative;
+			left: 0px;
+		}
+		#mySideBar.active {
+			left: -90px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+<section id="mySideBar">This is my super duper content!</section>
+<button id="myButton">Toggle</button>
+
+
+
+<script type="text/javascript">
+
+// Add eventlistener to button
+var button = document.getElementById("myButton");
+button.addEventListener("click", function(){
+	console.log("button clicked");
+	var element = document.getElementById("mySideBar");
+    element.classList.toggle('active');
+});
+
+</script>
+</body>
+</html>
