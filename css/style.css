@@ -1,8 +1,10 @@
 /* Global Styling */
+/* line 3, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 * {
   border: 0px solid grey;
   box-sizing: border-box; }
 
+/* line 12, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 #background {
   position: relative;
   background-position: center top;
@@ -12,6 +14,7 @@
   height: 100%; }
 
 /* Navigation Menu Section */
+/* line 24, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav {
   height: 100%;
   width: 0;
@@ -23,9 +26,11 @@
   overflow-x: hidden;
   transition: 0.5s; }
 
+/* line 36, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .active {
   width: 15vw; }
 
+/* line 40, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav a {
   height: 20%;
   text-decoration: none;
@@ -35,11 +40,13 @@
   transition: 0.3s;
   text-align: center; }
 
+/* line 50, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav a:hover,
 .offcanvas a:focus {
   color: #f1f1f1;
   background-color: blue; }
 
+/* line 56, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -47,6 +54,7 @@
   font-size: 36px;
   margin-left: 50px; }
 
+/* line 65, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 #openbutton {
   position: fixed;
   left: 0;
@@ -54,21 +62,26 @@
   border-radius: 5px;
   transition: 0.5s; }
 
+/* line 73, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .closebutton {
   margin-left: 15%; }
 
 /* Kitchen Page */
+/* line 80, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .kitchen {
   max-width: 32%;
   display: inline-block; }
 
+/* line 85, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .kitchen-image {
   max-width: 90%; }
 
+/* line 89, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .kitchen-name {
   font-size: 1em; }
 
 /* Footer Section */
+/* line 96, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .footer1 {
   width: 100%;
   height: 100px;
@@ -77,11 +90,13 @@
   background-color: #d34949;
   text-align: center;
   margin-top: 700px; }
+  /* line 104, ../../wamp64/www/aarhusstreetfood/css/style.scss */
   .footer1 p {
     font-size: 16px;
     padding-top: 15px;
     color: rgba(255, 255, 255, 0.66); }
 
+/* line 111, ../../wamp64/www/aarhusstreetfood/css/style.scss */
 .footer span {
   display: block;
   padding-bottom: 10px; }
