@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 19. 05 2017 kl. 08:07:44
+-- Genereringstid: 21. 05 2017 kl. 21:27:08
 -- Serverversion: 5.7.14
 -- PHP-version: 5.6.25
 
@@ -83,8 +83,55 @@ CREATE TABLE `orders` (
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `kitchen_id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
   `price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Data dump for tabellen `products`
+--
+
+INSERT INTO `products` (`id`, `kitchen_id`, `name`, `price`) VALUES
+(1, 1, 'Crepe', 40),
+(2, 1, 'Galette', 50),
+(3, 2, 'Masaman Karry', 50),
+(4, 2, 'Phad Thai', 75),
+(5, 3, 'Flæskestegssandwich', 50),
+(6, 3, 'Frikadellesandwich', 50),
+(7, 4, 'Jerk Pork', 50),
+(8, 4, 'Jerk Chicken', 60),
+(9, 5, 'Fish & Chips', 50),
+(10, 5, 'Fiskefrikadeller', 40),
+(11, 6, 'Amerikansk Burger', 75),
+(12, 6, 'Amerikansk Sandwich', 50),
+(13, 7, 'Lille pizza', 50),
+(14, 7, 'Stor pizza', 75),
+(15, 8, 'Tostada', 50),
+(16, 8, 'Burrito', 50),
+(17, 9, 'Sandwich', 60),
+(18, 9, 'Salat', 50),
+(19, 10, 'Tapas', 50),
+(20, 10, 'Panini', 60),
+(21, 11, 'Filterkaffe', 25),
+(22, 11, 'Cappuccino', 35),
+(23, 12, 'Lille fadøl', 30),
+(24, 12, 'Stor fadøl', 50),
+(25, 13, 'Pulled Duck', 50),
+(26, 13, 'Duck Fat Fries', 30),
+(27, 14, 'Sandwich med confit de canard', 60),
+(28, 14, 'Sandwich med krydret pølse', 50),
+(29, 15, 'Shawarmarulle', 50),
+(30, 15, 'Habibi tallerken', 50),
+(31, 16, 'Bao med kimchi', 50),
+(32, 16, 'Bao med grøntsager', 40),
+(33, 17, 'Butter Chicken', 50),
+(34, 17, 'Vegansk Rajma', 40),
+(35, 18, 'Cheesecake med skovbær', 35),
+(36, 18, 'Cheesecake med karamel', 35),
+(37, 19, 'Tarteletter', 50),
+(38, 19, 'Boller i karry', 50),
+(39, 20, 'Chicken Wings', 50),
+(40, 20, 'Pulled Beef Burger', 75);
 
 -- --------------------------------------------------------
 
@@ -171,7 +218,7 @@ ALTER TABLE `orders`
 -- Tilføj AUTO_INCREMENT i tabel `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- Tilføj AUTO_INCREMENT i tabel `users`
 --

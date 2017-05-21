@@ -90,6 +90,29 @@ body {
     font-size: 1em;
 }
 
+.modal-wrapper {
+    display: none;
+}
+
+.product {
+    
+    position: relative;
+    
+    * {
+        display: inline-block;
+    }
+    
+    h4 {
+        position: relative;
+        left: -0.5em;
+    }
+    
+    button {
+        position: relative;
+        left: 0.5em;
+    }
+}
+
 
 /* Footer Section */
 
