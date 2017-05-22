@@ -3,7 +3,7 @@
 
 <?php include 'include/head.php' ?>
 
-<body id="background">
+<body>
     
 
  
@@ -16,15 +16,12 @@
     
     
     <main>
+        <h1>Kurv</h1>
     </main>
     
     
     <!-- Footer med kontaktinformation -->
-    <footer class="footerforside">
- 
-    <p>Aarhus Street Food</p> <p> Mad Mad Mad Mad</p> <p> Tlf: 12 34 56 78 </p> <p> Email: aarhusstreetfood@gmail.com </p>
-   
-</footer>
+      <?php include 'include/footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/menu.js"></script>
