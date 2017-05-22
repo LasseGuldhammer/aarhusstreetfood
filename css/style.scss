@@ -9,6 +9,7 @@
 body {
         background-color: #ededed;
         font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
    
 }
 
@@ -83,7 +84,6 @@ body {
     margin-left: 50px;
 }
 
-
 .frame {
     display: flex;
     align-items: center;
@@ -114,13 +114,18 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 50px 100px 50px 200px;
-    transition: 0.5s;
+    transition: 0.5s;   
+}
 
-   
+#articlekitchen a {
+    width: 25%;
+    padding: 0;
+    text-decoration: none;
+    color: black;
 }
 
 .kitchen {
-    width: 25%;
+    width: 100%;
     text-align: center;
     padding-bottom: 40px;
     transition: 0.5s;
@@ -142,9 +147,8 @@ body {
     display: none;
 }
 
-.product {
-    
-    position: relative;
+.product {    
+    position: relative;    
     
     * {
         display: inline-block;

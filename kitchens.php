@@ -23,7 +23,7 @@ $_SESSION['cart']=$cart;
         <?php
             $servername = "localhost";
             $dbname = "asf";
-            $username = "admin";
+            $username = "root";
             $password = "";
 
             // Forbind til databasen
@@ -49,18 +49,9 @@ $_SESSION['cart']=$cart;
             $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
         ?>
         
-
-        <!-- Primært indhold -->
-        <main>
-            <article id="articlekitchen">
-            <?php foreach($results as $result) { ?>
-            <section class="kitchen">
-                <img class="kitchen-image" src="img/<?php echo $result["image"]; ?>" alt="<?php echo $result["name"]; ?> billede">
-                <h2 class="kitchen-name"><?php echo $result["name"]; ?></h2>
-            </section>
-
         <!-- Alle køkkenerne + modalbokse -->
         <main>
+            <article id="articlekitchen">
             <!-- Foreach loop der genererer alle køkkenerne -->
             <?php foreach($kitchens as $kitchen) { ?>
             <a href="#<?php echo $kitchen["id"]; ?>-modal" data-modal>
@@ -88,9 +79,9 @@ $_SESSION['cart']=$cart;
             </div>
 
             <?php } ?>
-                </article>
+                
             
-         
+            </article> 
         </main>
         
         <!-- Footer med kontaktinformation -->
