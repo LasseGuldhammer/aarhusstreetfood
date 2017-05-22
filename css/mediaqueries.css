@@ -9,11 +9,15 @@
   /* line 11, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   #articlekitchen {
     padding: 50px 60px 50px 200px; }
-  /* line 16, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
-  footer p {
-    padding: 0px 10px;
-    font-size: 0.8em; }
-  /* line 23, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+
+
+  footer {
+    height: 80px; }
+    footer p {
+      padding: 0px 10px;
+      font-size: 0.8em; }
+
+
   .active {
     width: 20%; }
   /* line 27, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
@@ -40,6 +44,14 @@
     width: 33%; }
   /* line 56, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .closebutton {
-    margin-left: 33%; } }
+    margin-left: 33%; }
+
+  footer {
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    footer p {
+      width: 50%;
+      text-align: center; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
