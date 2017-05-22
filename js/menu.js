@@ -15,5 +15,9 @@ button.addEventListener("click", function () {
 
 
 $( "#openbutton" ).click(function() {
-  $( this ).toggleClass( "closebutton" );
+  $( ".frame" ).toggleClass( "closebutton" );
 });
+
+
+
+

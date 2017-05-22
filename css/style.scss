@@ -1,3 +1,4 @@
+
 /* Global Styling */
 
 * {
@@ -6,16 +7,25 @@
 }
 
 body {
+        background-color: #ededed;
+        font-family: 'Open Sans', sans-serif;
    
 }
 
-#background {
-    position: relative;
-    background-position: center top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+  #background { 
+  background: url(../img/aarhusstreetfood1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  #background1 { 
+  background: url(../img/aarhusstreetfood_login.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -28,9 +38,12 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e53935;
+    background-color: #d34949;
     overflow-x: hidden;
     transition: 0.5s;
+        display: flex;
+    flex-direction: column;
+ 
 }
 
 .active {
@@ -38,20 +51,29 @@ body {
 }
 
 .sidenav a {
+ 
     height: 20%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1em;
     color: #fff;
-    display: block;
     transition: 0.3s;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .sidenav a:hover,
 .offcanvas a:focus {
     color: #f1f1f1;
-    background-color: blue;
+    background-color: #d67f7f;
 }
+
+.icon {
+    width: 100%;
+    padding: 0% 25%;
+}
+
 
 .sidenav .closebtn {
     position: absolute;
@@ -62,13 +84,22 @@ body {
 }
 
 
-#openbutton {
+.frame {
+    display: flex;
+    align-items: center;
     position: fixed;
-    left: 0;
-    top: 45%;
-    border-radius: 5px;
+    height: 100%;
     transition: 0.5s;
 }
+
+
+#openbutton {
+
+    border-radius: 3px;
+    transition: 0.5s;
+    width: 25px;
+}
+
 
 .closebutton {
     margin-left: 15%;
@@ -77,38 +108,102 @@ body {
 
 /* Kitchen Page */
 
+#articlekitchen {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px 100px 50px 200px;
+    transition: 0.5s;
+
+   
+}
+
 .kitchen {
-    max-width: 32%;
-    display: inline-block;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 40px;
+    transition: 0.5s;
 }
 
 .kitchen-image {   
     max-width: 90%;
+    border-radius: 100%;
+    transition: 0.5s;
+    animation: pulse 1.5s ease 0s;
 }
 
 .kitchen-name {
     font-size: 1em;
+    text-align: center;
 }
 
 
 /* Footer Section */
 
-.footer1 {
+footer {
     width: 100%;
-    height: 100px;
-    display: block;
+    height: 60px;
     margin: 0 auto;
     background-color: #d34949;
     text-align: center;
-    margin-top: 700px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
     p {
-        font-size: 16px;
-        padding-top: 15px;
+        font-size: 0.9em;
         color: rgba(255, 255, 255, 0.66);
+        padding: 0px 50px;
     }
 }
 
-.footer span {
-    display: block;
-    padding-bottom: 10px;
+.footerforside {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #d34949;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.66);
+        padding: 0px 50px;
+    }
 }
+
+/* Login Section */
+
+#login {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inp0 {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 1px;
+    outline: none;
+}
+
+.inp1 {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #882f2f;
+    color: white;
+    transition: 0.5s;
+    outline: none;
+}
+
+.inp1:hover {
+    background-color: #b74141;
+}
+
+

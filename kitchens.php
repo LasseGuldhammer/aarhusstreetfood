@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Køkkener | Aarhus Street Food</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+
+    
+<?php include 'include/head.php' ?>
     
     <body>
         
-        <!-- Header med fixed logo -->
-        <header>
-            <img id="asf-logo" class="asf-logo" src="img/logo.png" alt="Aarhus Street Food logo" onclick="toggleNav()">
-        </header>
+
         
         <!-- Hovedmenu -->
-        <nav>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">Forside</a>
-                <a href="kitchens.html">Køkkener</a>
-                <a href="#">Kurv</a>
-                <a href="#">Kort</a>
-                <a href="#">Profil</a>
-            </div>
-        </nav>
+        
+<?php include 'include/sidebarnav.php' ?>
         
         <!-- Create New PDO -->
         <?php
             $servername = "localhost";
             $dbname = "asf";
-            $username = "root";
+            $username = "admin";
             $password = "";
 
             try {
@@ -57,27 +40,22 @@
         ?>
         
         <!-- Primært indhold -->
-        <main>            
+        <main>
+            <article id="articlekitchen">
             <?php foreach($results as $result) { ?>
             <section class="kitchen">
                 <img class="kitchen-image" src="img/<?php echo $result["image"]; ?>" alt="<?php echo $result["name"]; ?> billede">
                 <h2 class="kitchen-name"><?php echo $result["name"]; ?></h2>
             </section>
             <?php } ?>
+                </article>
+            
+         
         </main>
         
         <!-- Footer med kontaktinformation -->
-        <footer>
-            <div>
-                <p>Åbningstider</p>
-            </div>
-            <div>
-                <p>Adresse</p>
-            </div>
-            <div>
-                <p>E-mail</p>
-            </div>
-        </footer>
+      
+        <?php include 'include/footer.php' ?>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         
