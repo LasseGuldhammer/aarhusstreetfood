@@ -111,6 +111,20 @@ a svg:hover .st0, a:hover .st0 {
   font-size: 1em;
   text-align: center; }
 
+.modal-wrapper {
+  display: none; }
+
+.product {
+  position: relative; }
+  .product * {
+    display: inline-block; }
+  .product h4 {
+    position: relative;
+    left: -0.5em; }
+  .product button {
+    position: relative;
+    left: 0.5em; }
+
 /* Footer Section */
 footer {
   width: 100%;
