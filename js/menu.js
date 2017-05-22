@@ -15,9 +15,17 @@ button.addEventListener("click", function () {
 
 
 $( "#openbutton" ).click(function() {
-  $( ".frame" ).toggleClass( "closebutton" );
+    $( ".frame" ).toggleClass( "closebutton" );
 });
 
+/*$( "#mySidenav" ).mouseover(function() {
+    $( ".st0" ).removeClass( "st0" );
+    $( ".st0" ).addClass( "sthover" );
+});
 
+$( "#mySidenav" ).mouseleave(function() {
+    $( ".sthover" ).removeClass( "sthover" );
+    $( ".sthover" ).addClass( "st0" );
+});*/
 
 

@@ -8,6 +8,7 @@
     }
     
     footer {
+        height: 80px;
         p {
             padding: 0px 10px;
             font-size: 0.8em;
@@ -45,5 +46,15 @@
     
     .closebutton {
         margin-left: 33%;
+    }
+    
+    footer {
+        height: 150px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        p {
+            width: 50%;
+            text-align: center;
+        }
     }
 }

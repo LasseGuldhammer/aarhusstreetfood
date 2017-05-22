@@ -5,9 +5,11 @@
   #articlekitchen {
     padding: 50px 60px 50px 200px; }
 
-  footer p {
-    padding: 0px 10px;
-    font-size: 0.8em; }
+  footer {
+    height: 80px; }
+    footer p {
+      padding: 0px 10px;
+      font-size: 0.8em; }
 
   .active {
     width: 20%; }
@@ -29,6 +31,14 @@
     width: 33%; }
 
   .closebutton {
-    margin-left: 33%; } }
+    margin-left: 33%; }
+
+  footer {
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    footer p {
+      width: 50%;
+      text-align: center; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */

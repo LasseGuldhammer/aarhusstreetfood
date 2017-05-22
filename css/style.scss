@@ -7,7 +7,7 @@
 }
 
 body {
-        background-color: #ededed;
+        background-color: rgba(216, 191, 160, 0.26);
         font-family: 'Open Sans', sans-serif;
    
 }
@@ -38,10 +38,10 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #d34949;
+    background-color: #c23f33;
     overflow-x: hidden;
     transition: 0.5s;
-        display: flex;
+    display: flex;
     flex-direction: column;
  
 }
@@ -56,7 +56,7 @@ body {
     text-decoration: none;
     font-size: 1em;
     color: #fff;
-    transition: 0.3s;
+    transition: 0.5s;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -65,14 +65,25 @@ body {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-    color: #f1f1f1;
-    background-color: #d67f7f;
+    color: black;
+    background-color: #f4eee6;
 }
 
 .icon {
     width: 100%;
     padding: 0% 25%;
+    color: #fff;   
 }
+
+.st0 {
+    transition: 0.5s;
+}
+
+a svg:hover .st0, a:hover .st0 {
+    fill: #111;
+}
+
+
 
 
 .sidenav .closebtn {
@@ -95,9 +106,8 @@ body {
 
 #openbutton {
 
-    border-radius: 3px;
     transition: 0.5s;
-    width: 25px;
+    width: 50px;
 }
 
 
@@ -114,9 +124,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 50px 100px 50px 200px;
-    transition: 0.5s;
-
-   
+    transition: 0.5s;   
 }
 
 .kitchen {
@@ -145,11 +153,12 @@ footer {
     width: 100%;
     height: 60px;
     margin: 0 auto;
-    background-color: #d34949;
+    background-color: #252525;
     text-align: center;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     p {
         font-size: 0.9em;
         color: rgba(255, 255, 255, 0.66);
@@ -161,7 +170,7 @@ footer {
     width: 100%;
     height: 60px;
     margin: 0 auto;
-    background-color: #d34949;
+    background-color: #252525;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -190,20 +199,22 @@ footer {
     height: 50px;
     margin-bottom: 1px;
     outline: none;
+    background-color: #f4eee6;
 }
 
 .inp1 {
     width: 150px;
     height: 50px;
     margin-top: 20px;
-    background-color: #882f2f;
+    background-color: #c23f33;
     color: white;
     transition: 0.5s;
     outline: none;
 }
 
 .inp1:hover {
-    background-color: #b74141;
+    background-color: #f4eee6;
+    color: black;
 }
 
 

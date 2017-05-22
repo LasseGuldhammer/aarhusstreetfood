@@ -8,9 +8,9 @@
     <nav>
         <div id="mySidenav" class="sidenav"> 
         <a href="index.php"> <img class="icon" src="img/logo.png"> </a> 
-        <a href="kitchens.php"><img class="icon" src="img/BESTIKWHITE.svg">Køkkener</a> 
-        <a href="kurv.php"><img class="icon" src="img/KURVWHITE.svg">Kurv</a> 
-        <a href="kort.php"><img class="icon" src="img/MAPWHITE.svg">Kort</a> 
-        <a href="profil.php"><img class="icon" src="img/PROFILBLACK.svg">Profil</a> </div>
+        <a href="kitchens.php"> <?php include 'include/bestik.php' ?> Køkkener</a> 
+        <a href="kurv.php"><?php include 'include/kurv.php' ?>Kurv</a> 
+        <a href="kort.php"><?php include 'include/kort.php' ?>Kort</a> 
+        <a href="profil.php"><?php include 'include/profil.php' ?>Profil</a> </div>
     </nav>
 
