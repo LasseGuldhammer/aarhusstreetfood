@@ -21,6 +21,15 @@
         }
     }
     
+    .footerforside {
+        height: 80px;
+        p {
+            padding: 0px 10px;
+            font-size: 0.8em;
+            
+        }
+    }
+    
     .active {
         width: 20%;
     }
@@ -59,12 +68,23 @@
     }
     
     footer {
+        height: 200px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    .footerforside {
         height: 150px;
         flex-wrap: wrap;
         justify-content: space-around;
         p {
             width: 50%;
             text-align: center;
+            
         }
     }
 }
