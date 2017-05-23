@@ -2,21 +2,13 @@
 <html class="no-js" lang="">
 
 <?php include 'include/head.php' ?>
-
+<title>Forside | Aarhus Street Food</title>
 <body id="background">
     
-
- 
 
     <!-- Hovedmenu -->
     
 <?php include 'include/sidebarnav.php' ?>
-    
-    <!-- Primært indhold -->
-    
-    
-    <main class="main-padding">
-    </main>
     
     
     <!-- Footer med kontaktinformation -->

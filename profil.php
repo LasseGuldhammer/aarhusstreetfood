@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 
 <?php include 'include/head.php' ?>
-
+<title>Profil | Aarhus Street Food</title>
 <body id="background1">
     
 
@@ -14,7 +14,7 @@
     
     <!-- Primært indhold -->
     
-    
+    <!-- Et midlertidigt login, for at illustrere hvordan det skal være i den endelige version. -->
     <main>
       <div id="login">
             <div>

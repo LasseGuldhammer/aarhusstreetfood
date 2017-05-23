@@ -1,8 +1,3 @@
-<?php
-session_start();
-$cart = array();
-$_SESSION['cart']=$cart;
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
     
@@ -64,24 +59,20 @@ $_SESSION['cart']=$cart;
                     // Foreach loop der genererer alle retterne            
                      foreach($products as $product) { 
                         if ($product["kitchen_id"] === $kitchen["id"]) { ?>
-                            <div class="product">
-                                <tr>
-                                <td><h4><?php echo $product["name"]; ?></h4></td>
-                                <td><p><?php echo $product["price"]; ?></p></td>
-                                <form method="post">               
-                                    <input type="hidden" name="id" value="<?php echo $product["id"]; ?>">
-                                    <input type="hidden" name="user_id" value="1">
-                                    <input type="hidden" name="total_price" value="<?php echo $product["price"]; ?>">
-                                    <td><input class="bestil" type="submit" value="Bestil" name="submit"></td></form>
-                                    </tr>
-                            </div>
-                    
-                
-      
-                
-                
-                
-                
+                    <div class="product">
+                        <tr>
+                        <td><h4><?php echo $product["name"]; ?></h4></td>
+                        <td><p><?php echo $product["price"]; ?></p></td>
+                            
+                        <!-- En form med skjult "type", der leverer brugbar information til databasen, men er skjult for kunden. -->
+                            
+                        <form method="post">                 <input type="hidden"             name="id" value="<?php echo       $product["id"]; ?>">
+                            <input type="hidden" name="user_id" value="1">
+                            <input type="hidden" name="total_price" value="<?php echo $product["price"]; ?>">
+                            <td><input class="bestil" type="submit" value="Bestil" name="submit"></td></form>
+                            </tr>
+                    </div>
+    
                         <?php }
                     } ?> 
             </table>   
@@ -90,6 +81,8 @@ $_SESSION['cart']=$cart;
             </article> 
         </main>
     
+    
+        <!-- 2 statements der henholdsvis sender user_id og total_price til tabellen orders. Og sender product_id og order_id ind i products_belong_to_orders. -->
         <?php
     
         if(isset($_POST["submit"])){
@@ -101,25 +94,8 @@ $_SESSION['cart']=$cart;
         
         $stmt = $conn->prepare("INSERT INTO products_belong_to_orders (product_id, order_id)
         VALUES('".$_POST["id"]."','".$LAST_ID."')");
-        $sonuc = $stmt->execute();        
-        
-        /*
-        $sql = "INSERT INTO orders (user_id, total_price)
+        $sonuc = $stmt->execute();}
     
-        VALUES ('".$_POST["user_id"]."','".$_POST["total_price"]."')";
-            
-        $conn->exec($sql);
-            
-        $LAST_ID = PDO::lastInsertId;        
-            
-        $sql = "INSERT INTO products_belong_to_orders (product_id, order_id)
-            
-        VALUES ('".$_POST["id"]."','".$LAST_ID."')";
-            
-        $conn->exec($sql);
-        */
-            
-        }
         ?>
         
         <!-- Footer med kontaktinformation -->

@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
 
 <?php include 'include/head.php' ?>
-
+<title>Kurv | Aarhus Street Food</title>
 <body>
     
     <!-- Hovedmenu -->
