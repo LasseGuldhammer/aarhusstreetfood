@@ -17,7 +17,7 @@ $_SESSION['cart']=$cart;
         <?php
             $servername = "localhost";
             $dbname = "asf";
-            $username = "admin";
+            $username = "root";
             $password = "";
 
             // Forbind til databasen
