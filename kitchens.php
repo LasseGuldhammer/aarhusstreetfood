@@ -59,21 +59,32 @@ $_SESSION['cart']=$cart;
                 <img class="kitchen-image" src="img/<?php echo $kitchen["image"]; ?>" alt="<?php echo $kitchen["name"]; ?> billede">
                 <h2 class="kitchen-name"><?php echo $kitchen["name"]; ?></h2>
                 <p><?php echo $kitchen["description"]; ?></p>
+                <table class="ordrer1">
                     <?php
                     // Foreach loop der genererer alle retterne            
                      foreach($products as $product) { 
                         if ($product["kitchen_id"] === $kitchen["id"]) { ?>
                             <div class="product">
-                                <h4><?php echo $product["name"]; ?></h4>
-                                <p><?php echo $product["price"]; ?></p>
+                                <tr>
+                                <td><h4><?php echo $product["name"]; ?></h4></td>
+                                <td><p><?php echo $product["price"]; ?></p></td>
                                 <form method="post">               
                                     <input type="hidden" name="id" value="<?php echo $product["id"]; ?>">
                                     <input type="hidden" name="user_id" value="1">
                                     <input type="hidden" name="total_price" value="<?php echo $product["price"]; ?>">
-                                    <input id="bestil" type="submit" value="Bestil" name="submit"></form>
-                            </div>                        
+                                    <td><input class="bestil" type="submit" value="Bestil" name="submit"></td></form>
+                                    </tr>
+                            </div>
+                    
+                
+      
+                
+                
+                
+                
                         <?php }
-                    } ?>                    
+                    } ?> 
+            </table>   
             </div>
             <?php } ?>
             </article> 
@@ -113,7 +124,11 @@ $_SESSION['cart']=$cart;
         
         <!-- Footer med kontaktinformation -->
       
-        <?php include 'include/footer.php' ?>
+       <footer>
+ 
+    <p>Aarhus Street Food</p> <p> Mad Mad Mad Mad</p> <p> Tlf: 12 34 56 78 </p> <p> Email: aarhusstreetfood@gmail.com </p>
+   
+</footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         

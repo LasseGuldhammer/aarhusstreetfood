@@ -15,7 +15,7 @@
         <?php
             $servername = "localhost";
             $dbname = "asf";
-            $username = "root";
+            $username = "admin";
             $password = "";
 
             // Forbind til databasen
@@ -40,10 +40,10 @@
             $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
         ?>
     
-        <main>
+        <main class="main-padding">
             <h1>Kurv</h1>
             <h2><?php echo $current_user[0]["name"] ?>s ordrer</h2>
-            <table id="ordrer">
+            <table class="ordrer">
             <?php foreach($user_orders as $user_order) { ?>                
                 <tr>
                     <td>Ordre <?php echo $user_order["id"] ?>:</td>
