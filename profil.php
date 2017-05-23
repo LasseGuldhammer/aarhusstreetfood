@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html>
 
-<?php include 'include/head.php' ?>
-<title>Profil | Aarhus Street Food</title>
+<head>
+    <?php include 'include/head.php' ?>
+    <title>Brugerprofil | Aarhus Street Food</title>
+</head>
+
 <body id="background1">
-    
 
- 
-
-    <!-- Hovedmenu -->
-    
-<?php include 'include/sidebarnav.php' ?>
-    
-    <!-- Primært indhold -->
+    <!-- Hovedmenu -->    
+    <?php include 'include/sidebarnav.php' ?>
     
     <!-- Et midlertidigt login, for at illustrere hvordan det skal være i den endelige version. -->
     <main>
-      <div id="login">
+        <div id="login">
             <div>
                 <form action="forside.php" method="POST">
                     <input type="text" name="username" placeholder="Brugernavn" class="inp0">
@@ -28,14 +25,13 @@
                 </form>
             </div>
         </div>
-    </main>
-    
+    </main>    
     
     <!-- Footer med kontaktinformation -->
-             <?php include 'include/footer.php' ?>
+    <?php include 'include/footer.php' ?>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/menu.js"></script>
+    
 </body>
-
 </html>

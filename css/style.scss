@@ -9,24 +9,23 @@
 body {
         background-color: rgba(216, 191, 160, 0.26);
         font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-   
+        font-weight: bold;   
 }
 
   #background { 
-  background: url(../img/aarhusstreetfood1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+      background: url(../img/aarhusstreetfood1.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
 
   #background1 { 
-  background: url(../img/aarhusstreetfood_login.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+      background: url(../img/aarhusstreetfood_login.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
 
 
@@ -51,8 +50,7 @@ body {
     width: 15vw;
 }
 
-.sidenav a {
- 
+.sidenav a { 
     height: 20%;
     text-decoration: none;
     font-size: 1em;
@@ -84,9 +82,6 @@ a svg:hover .st0, a:hover .st0 {
     fill: #111;
 }
 
-
-
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -104,19 +99,14 @@ a svg:hover .st0, a:hover .st0 {
     z-index: 2;
 }
 
-
 #openbutton {
-
     transition: 0.5s;
-    width: 50px;
- 
+    width: 50px; 
 }
-
 
 .closebutton {
     margin-left: 15%;
 }
-
 
 /* Kitchen Page */
 
@@ -126,8 +116,7 @@ a svg:hover .st0, a:hover .st0 {
     flex-direction: row;
     justify-content: space-around;
     padding: 50px 100px 50px 200px;
-    transition: 0.5s;   
-
+    transition: 0.5s;
 }
 
 #articlekitchen a {
@@ -135,7 +124,6 @@ a svg:hover .st0, a:hover .st0 {
     padding: 0;
     text-decoration: none;
     color: black;
-
 }
 
 .kitchen {
@@ -161,22 +149,21 @@ a svg:hover .st0, a:hover .st0 {
     display: none;
 }
 
-.product {    
-    position: relative;    
-    
-    * {
-        display: inline-block;
-    }
-    
-    h4 {
-        position: relative;
-        left: -0.5em;
-    }
-    
-    button {
-        position: relative;
-        left: 0.5em;
-    }
+.product-name {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.product-price {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-order {
+    width: 20%;
+    display: inline-block;
 }
 
 .bestil {
@@ -187,8 +174,7 @@ a svg:hover .st0, a:hover .st0 {
     transition: 0.5s;
     outline: none;
     text-decoration: none;
-    text-align: right;
-    
+    text-align: right;    
 }
 
 .bestil:hover {
@@ -205,7 +191,6 @@ a svg:hover .st0, a:hover .st0 {
 
 .ordrer, .ordrer tbody {
     margin: 0 auto;
-
     tr {
         td:nth-child(2) {
             padding: 0 2em;
@@ -223,10 +208,9 @@ a svg:hover .st0, a:hover .st0 {
     }
 }
 
-
 /* Footer Section */
 
-footerk {
+.footerk {
     width: 100%;
     height: 60px;
     bottom: 0;
@@ -261,10 +245,6 @@ footer {
     }
 }
 
-
-
-
-
 /* Login Section */
 
 #login {
@@ -297,7 +277,3 @@ footer {
     background-color: #f4eee6;
     color: black;
 }
-
-
-
-

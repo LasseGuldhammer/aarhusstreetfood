@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html>
 
-<?php include 'include/head.php' ?>
-<title>Forside | Aarhus Street Food</title>
-<body id="background">
-    
+<head>
+    <?php include 'include/head.php' ?>
+    <title>Forside | Aarhus Street Food</title>
+</head>
 
-    <!-- Hovedmenu -->
-    
-<?php include 'include/sidebarnav.php' ?>
-    
-    
-    <!-- Footer med kontaktinformation -->
+<body id="background">    
 
+    <!-- Hovedmenu -->    
+    <?php include 'include/sidebarnav.php' ?>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/menu.js"></script>
