@@ -78,13 +78,19 @@
     }
     
     .footerforside {
+
         height: 150px;
         flex-wrap: wrap;
         justify-content: space-around;
         p {
-            width: 50%;
+            width: 100%;
             text-align: center;
             
         }
     }
+    
+    .main-padding {
+        padding-bottom: 180%;
+    }
+    
 }

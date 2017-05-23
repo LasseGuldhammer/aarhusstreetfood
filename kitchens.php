@@ -5,21 +5,15 @@ $_SESSION['cart']=$cart;
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="">
-
-
     
 <?php include 'include/head.php' ?>
     
-    <body>
+<body>
+    
+    <!-- Hovedmenu -->        
+    <?php include 'include/sidebarnav.php' ?>
         
-
-
-        
-        <!-- Hovedmenu -->
-        
-<?php include 'include/sidebarnav.php' ?>
-        
-        <!-- Opret ny PDO -->
+        <!-- Opret en PDO -->
         <?php
             $servername = "localhost";
             $dbname = "asf";
@@ -60,29 +54,62 @@ $_SESSION['cart']=$cart;
                     <h2 class="kitchen-name"><?php echo $kitchen["name"]; ?></h2>
                 </section>
             </a>
-            <!-- Foreach loop der genererer alle modalbokse  -->
+            <!-- Alle modalboksene  -->
             <div id="<?php echo $kitchen["id"]; ?>-modal" class="modal-wrapper">
                 <img class="kitchen-image" src="img/<?php echo $kitchen["image"]; ?>" alt="<?php echo $kitchen["name"]; ?> billede">
                 <h2 class="kitchen-name"><?php echo $kitchen["name"]; ?></h2>
                 <p><?php echo $kitchen["description"]; ?></p>
-                <?php
-                    // Foreach loop der genererer alle retterne
-                    foreach($products as $product) { 
+                    <?php
+                    // Foreach loop der genererer alle retterne            
+                     foreach($products as $product) { 
                         if ($product["kitchen_id"] === $kitchen["id"]) { ?>
                             <div class="product">
                                 <h4><?php echo $product["name"]; ?></h4>
                                 <p><?php echo $product["price"]; ?></p>
-                                <button>Bestil</button>
-                            </div>
+                                <form method="post">               
+                                    <input type="hidden" name="id" value="<?php echo $product["id"]; ?>">
+                                    <input type="hidden" name="user_id" value="1">
+                                    <input type="hidden" name="total_price" value="<?php echo $product["price"]; ?>">
+                                    <input id="bestil" type="submit" value="Bestil" name="submit"></form>
+                            </div>                        
                         <?php }
-                    } ?>
+                    } ?>                    
             </div>
-
             <?php } ?>
-                
-            
             </article> 
         </main>
+    
+        <?php
+    
+        if(isset($_POST["submit"])){
+            
+        $stmt = $conn->prepare("INSERT INTO orders (user_id, total_price) 
+        VALUES('".$_POST["user_id"]."','".$_POST["total_price"]."')");
+        $sonuc = $stmt->execute();
+        $LAST_ID = $conn->lastInsertId();
+        
+        $stmt = $conn->prepare("INSERT INTO products_belong_to_orders (product_id, order_id)
+        VALUES('".$_POST["id"]."','".$LAST_ID."')");
+        $sonuc = $stmt->execute();        
+        
+        /*
+        $sql = "INSERT INTO orders (user_id, total_price)
+    
+        VALUES ('".$_POST["user_id"]."','".$_POST["total_price"]."')";
+            
+        $conn->exec($sql);
+            
+        $LAST_ID = PDO::lastInsertId;        
+            
+        $sql = "INSERT INTO products_belong_to_orders (product_id, order_id)
+            
+        VALUES ('".$_POST["id"]."','".$LAST_ID."')";
+            
+        $conn->exec($sql);
+        */
+            
+        }
+        ?>
         
         <!-- Footer med kontaktinformation -->
       
