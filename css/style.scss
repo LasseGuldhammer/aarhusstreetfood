@@ -101,6 +101,7 @@ a svg:hover .st0, a:hover .st0 {
     position: fixed;
     height: 100%;
     transition: 0.5s;
+    z-index: 2;
 }
 
 
@@ -108,6 +109,7 @@ a svg:hover .st0, a:hover .st0 {
 
     transition: 0.5s;
     width: 50px;
+ 
 }
 
 
@@ -177,9 +179,43 @@ a svg:hover .st0, a:hover .st0 {
     }
 }
 
+.bestil {
+    padding: 5px 20px;
+    margin-top: 20px;
+    background-color: #c23f33;
+    color: white;
+    transition: 0.5s;
+    outline: none;
+    text-decoration: none;
+    text-align: right;
+    
+}
+
+.bestil:hover {
+    background-color: #f4eee6;
+    color: black;
+}
+
 /* Kurv Section */
 
-#ordrer {
+.main-padding {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ordrer, .ordrer tbody {
+    margin: 0 auto;
+
+    tr {
+        td:nth-child(2) {
+            padding: 0 2em;
+        }
+    }
+}
+
+.ordrer1 {
+    vertical-align: baseline;
+    width: 100%;
     tr {
         td:nth-child(2) {
             padding: 0 2em;
@@ -189,6 +225,24 @@ a svg:hover .st0, a:hover .st0 {
 
 
 /* Footer Section */
+
+footerk {
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    position: absolute;
+    background-color: #252525;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-size: 0.9em;
+        color: rgba(255, 255, 255, 0.66);
+        padding: 0px 50px;
+    }
+}
 
 footer {
     width: 100%;
@@ -207,29 +261,15 @@ footer {
     }
 }
 
-.footerforside {
-    width: 100%;
-    height: 60px;
-    margin: 0 auto;
-    background-color: #252525;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    p {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.66);
-        padding: 0px 50px;
-    }
-}
+
+
+
 
 /* Login Section */
 
 #login {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -257,5 +297,7 @@ footer {
     background-color: #f4eee6;
     color: black;
 }
+
+
 
 

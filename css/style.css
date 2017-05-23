@@ -1,0 +1,226 @@
+/* Global Styling */
+* {
+  border: 0px solid grey;
+  box-sizing: border-box; }
+
+body {
+  background-color: rgba(216, 191, 160, 0.26);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+
+#background {
+  background: url(../img/aarhusstreetfood1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#background1 {
+  background: url(../img/aarhusstreetfood_login.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/* Navigation Menu Section */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #c23f33;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column; }
+
+.active {
+  width: 15vw; }
+
+.sidenav a {
+  height: 20%;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.sidenav a:hover,
+.offcanvas a:focus {
+  color: black;
+  background-color: #f4eee6; }
+
+.icon {
+  width: 100%;
+  padding: 0% 25%;
+  color: #fff; }
+
+.st0 {
+  transition: 0.5s; }
+
+a svg:hover .st0, a:hover .st0 {
+  fill: #111; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+.frame {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2; }
+
+#openbutton {
+  transition: 0.5s;
+  width: 50px; }
+
+.closebutton {
+  margin-left: 15%; }
+
+/* Kitchen Page */
+#articlekitchen {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 100px 50px 200px;
+  transition: 0.5s; }
+
+#articlekitchen a {
+  width: 25%;
+  padding: 0;
+  text-decoration: none;
+  color: black; }
+
+.kitchen {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  transition: 0.5s; }
+
+.kitchen-image {
+  max-width: 90%;
+  border-radius: 100%;
+  transition: 0.5s;
+  animation: pulse 1.5s ease 0s; }
+
+.kitchen-name {
+  font-size: 1em;
+  text-align: center; }
+
+.modal-wrapper {
+  display: none; }
+
+.product {
+  position: relative; }
+  .product * {
+    display: inline-block; }
+  .product h4 {
+    position: relative;
+    left: -0.5em; }
+  .product button {
+    position: relative;
+    left: 0.5em; }
+
+.bestil {
+  padding: 5px 20px;
+  margin-top: 20px;
+  background-color: #c23f33;
+  color: white;
+  transition: 0.5s;
+  outline: none;
+  text-decoration: none;
+  text-align: right; }
+
+.bestil:hover {
+  background-color: #f4eee6;
+  color: black; }
+
+/* Kurv Section */
+.main-padding {
+  text-align: center;
+  margin-top: 50px; }
+
+.ordrer, .ordrer tbody {
+  margin: 0 auto; }
+  .ordrer tr td:nth-child(2), .ordrer tbody tr td:nth-child(2) {
+    padding: 0 2em; }
+
+.ordrer1 {
+  vertical-align: baseline;
+  width: 100%; }
+  .ordrer1 tr td:nth-child(2) {
+    padding: 0 2em; }
+
+/* Footer Section */
+footerk {
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  position: absolute;
+  background-color: #252525;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  footerk p {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.66);
+    padding: 0px 50px; }
+
+footer {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #252525;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  footer p {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.66);
+    padding: 0px 50px; }
+
+/* Login Section */
+#login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.inp0 {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 1px;
+  outline: none;
+  background-color: #f4eee6; }
+
+.inp1 {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #c23f33;
+  color: white;
+  transition: 0.5s;
+  outline: none; }
+
+.inp1:hover {
+  background-color: #f4eee6;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
