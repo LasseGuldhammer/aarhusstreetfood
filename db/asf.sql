@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 21. 05 2017 kl. 21:27:08
+-- Genereringstid: 23. 05 2017 kl. 08:34:42
 -- Serverversion: 5.7.14
 -- PHP-version: 5.6.25
 
@@ -70,9 +70,21 @@ INSERT INTO `kitchens` (`id`, `name`, `image`, `description`) VALUES
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `date` datetime NOT NULL,
+  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `total_price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Data dump for tabellen `orders`
+--
+
+INSERT INTO `orders` (`id`, `user_id`, `date`, `total_price`) VALUES
+(1, 1, '2017-05-22 20:20:10', 75),
+(2, 1, '2017-05-22 20:31:17', 60),
+(15, 1, '2017-05-22 21:03:39', 40),
+(16, 1, '2017-05-22 21:04:14', 50),
+(17, 1, '2017-05-23 09:13:24', 35),
+(18, 1, '2017-05-23 09:18:56', 35);
 
 -- --------------------------------------------------------
 
@@ -144,6 +156,17 @@ CREATE TABLE `products_belong_to_orders` (
   `order_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Data dump for tabellen `products_belong_to_orders`
+--
+
+INSERT INTO `products_belong_to_orders` (`product_id`, `order_id`) VALUES
+(4, 1),
+(8, 2),
+(1, 15),
+(24, 16),
+(22, 18);
+
 -- --------------------------------------------------------
 
 --
@@ -213,7 +236,7 @@ ALTER TABLE `kitchens`
 -- Tilføj AUTO_INCREMENT i tabel `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- Tilføj AUTO_INCREMENT i tabel `products`
 --
