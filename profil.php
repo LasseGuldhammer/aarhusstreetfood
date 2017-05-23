@@ -15,7 +15,7 @@
     <!-- Primært indhold -->
     
     
-    <main>
+    <main class="main-padding">
       <div id="login">
             <div>
                 <form action="forside.php" method="POST">

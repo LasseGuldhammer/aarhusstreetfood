@@ -15,7 +15,7 @@
     <!-- Primært indhold -->
     
     
-    <main>
+    <main class="main-padding">
     </main>
     
     
