@@ -12,24 +12,9 @@
     <?php include 'include/sidebarnav.php' ?>
         
     <!-- Opret en PDO -->
+    <?php include 'include/pdo.php' ?>
+    
     <?php
-        $servername = "localhost";
-        $dbname = "asf";
-        $username = "root";
-        $password = "";
-
-        // Forbind til databasen
-        try {
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-            // set the PDO error mode to exception
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // echo "Connected successfully";
-            }
-        catch(PDOException $e)
-            {
-            echo "Connection failed: " . $e->getMessage();
-            }
-
         // Hent indholdet fra kitchens tabellen
         $stmt = $conn->prepare("SELECT * FROM kitchens");
         $stmt->execute();

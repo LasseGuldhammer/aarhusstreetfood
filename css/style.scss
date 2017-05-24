@@ -6,10 +6,23 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Streetcred;
+    src: url(../fonts/street_cred.ttf);
+}
+
+.street-cred {
+    font-family: Streetcred;
+}
+
 body {
         background-color: rgba(216, 191, 160, 0.26);
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;   
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
   #background { 
@@ -35,7 +48,7 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     background-color: #c23f33;
@@ -106,6 +119,39 @@ a svg:hover .st0, a:hover .st0 {
 
 .closebutton {
     margin-left: 15%;
+}
+
+/* Forside */
+
+#asf {
+    position: fixed;
+    top: 60vh;
+    z-index: 1;
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.full-page {
+    height: 100vh;
+    width: 100vw;
+}
+
+.forside-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
 }
 
 /* Kitchen Page */
@@ -206,6 +252,24 @@ a svg:hover .st0, a:hover .st0 {
             padding: 0 2em;
         }
     }
+}
+
+/* Kort Section */
+
+.asf-kort {
+    margin: 0 auto;
+    max-height: 90vh;
+    width: 50%;
+    display: inline-block;
+    margin-left: 6vw;
+}
+
+.navne-liste {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    top: -5em;
+    margin-left: 6vw;
 }
 
 /* Footer Section */

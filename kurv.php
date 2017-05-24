@@ -12,24 +12,9 @@
     <?php include 'include/sidebarnav.php' ?>
     
     <!-- Opret en PDO -->
+    <?php include 'include/pdo.php' ?>
+    
     <?php
-        $servername = "localhost";
-        $dbname = "asf";
-        $username = "root";
-        $password = "";
-
-        // Forbind til databasen
-        try {
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-            // set the PDO error mode to exception
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            // echo "Connected successfully";
-            }
-        catch(PDOException $e)
-            {
-            echo "Connection failed: " . $e->getMessage();
-            }
-
         // Hent alle products i orders fra user 1
         $stmt = $conn->prepare("SELECT p.id, p.name, p.price, o.id, o.user_id FROM products as p INNER JOIN products_belong_to_orders as po ON p.id=po.product_id INNER JOIN orders as o ON po.order_id=o.id WHERE o.user_id='1'");
         $stmt->execute();

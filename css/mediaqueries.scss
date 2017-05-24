@@ -40,7 +40,21 @@
         width: 15%;
         margin: 20px 0px 0px 20px;
     }
+    
+    .asf-kort {
+        margin: 0 auto;
+        max-height: 90vh;
+        width: 90%;
+        display: block;
+        margin-left: 1vw;
+    }
 
+    .navne-liste {
+        margin: 0 auto;
+        display: block;
+        position: static;
+        margin-left: 33vw;
+    }
 }
 
 @media only screen and (max-width:600px) {
@@ -103,5 +117,25 @@
         outline: none;
         text-decoration: none;
         text-align: right;    
-    }    
+    }
+    
+    .asf-kort {
+        margin: 0 auto;
+        max-height: 90vh;
+        width: 90%;
+        display: block;
+        margin-left: 1vw;
+    }
+
+    .navne-liste {
+        margin: 0 auto;
+        display: block;
+        position: static;
+        margin-left: 15vw;
+    }
+    
+    #asf {
+        top: 50vh;
+        font-size: 4em;
+}
 }

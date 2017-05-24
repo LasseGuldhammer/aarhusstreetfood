@@ -32,51 +32,64 @@
   /* line 39, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   #logo {
     width: 15%;
-    margin: 20px 0px 0px 20px; } }
+    margin: 20px 0px 0px 20px; }
+  /* line 44, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  .asf-kort {
+    margin: 0 auto;
+    max-height: 90vh;
+    width: 90%;
+    display: block;
+    margin-left: 1vw; }
+  /* line 52, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  .navne-liste {
+    margin: 0 auto;
+    display: block;
+    position: static;
+    margin-left: 33vw; } }
 
 @media only screen and (max-width: 600px) {
-  /* line 47, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 61, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .kitchen {
     width: 100%; }
-  /* line 51, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 65, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   #articlekitchen a {
     width: 50%;
     padding: 0; }
-  /* line 56, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 70, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   #articlekitchen {
     padding: 50px 50px 50px 100px; }
-  /* line 60, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 74, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .active {
     width: 33%; }
-  /* line 64, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 78, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .closebutton {
     margin-left: 33%; }
-  /* line 68, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 82, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   footer, .footerk {
     height: 200px;
     flex-wrap: wrap;
     justify-content: space-around; }
-    /* line 72, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+    /* line 86, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
     footer p, .footerk p {
       width: 100%;
       text-align: center; }
-  /* line 78, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 92, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .footerk {
     bottom: -15vh;
     position: relative; }
-  /* line 83, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 97, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .footerforside {
     height: 150px;
     flex-wrap: wrap;
     justify-content: space-around; }
-    /* line 87, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+    /* line 101, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
     .footerforside p {
       width: 100%;
       text-align: center; }
-  /* line 93, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 107, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   #login {
     height: 70vh; }
-  /* line 97, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  /* line 111, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
   .bestil {
     padding: 2px 10px;
     margin-top: 20px;
@@ -85,6 +98,23 @@
     transition: 0.5s;
     outline: none;
     text-decoration: none;
-    text-align: right; } }
+    text-align: right; }
+  /* line 122, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  .asf-kort {
+    margin: 0 auto;
+    max-height: 90vh;
+    width: 90%;
+    display: block;
+    margin-left: 1vw; }
+  /* line 130, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  .navne-liste {
+    margin: 0 auto;
+    display: block;
+    position: static;
+    margin-left: 15vw; }
+  /* line 137, ../../wamp64/www/aarhusstreetfood/css/mediaqueries.scss */
+  #asf {
+    top: 50vh;
+    font-size: 4em; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
